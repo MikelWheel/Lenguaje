@@ -1,0 +1,24 @@
+/* #id_que hayamos puesto */
+#parrafo_especial{
+color: red;
+}
+
+p{
+    color: blue;
+}
+
+/* elemnto + punt + nombre de la clase */
+p.parrafo_rojo{
+    color: red;
+    font-style: oblique;
+}
+
+
+
+p.clase_especial1{
+    color: green;
+}
+p.clase_especial2{
+    color: brown;
+    font-style: oblique;
+}
