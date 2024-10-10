@@ -1,0 +1,26 @@
+div.bloque1{
+    color: red;
+    background-color: #e0f870;
+}
+div.bloque2{
+    color: green;
+    background-color: lightblue;
+}
+
+div{
+    background-color: #aac;
+   
+}
+div.caja1{
+
+    display: block;
+}
+div.caja2{
+    display: inline;
+}
+div.caja3{
+    display: inline;
+}
+div.caja4{
+    display: none;
+}
