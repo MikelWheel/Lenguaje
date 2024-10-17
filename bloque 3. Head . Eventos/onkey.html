@@ -1,0 +1,37 @@
+<!-- Ejemplo onkeydown event -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- script javascript     -->
+    <script>
+        function mifuncion() {
+            alert("Se ha ejecutado evento onkeydown");
+        }
+    </script>
+
+<script>
+    function jueves() {
+        alert("Me gustan los jueves de lmi");
+    }
+
+    function nose(){
+        alert("Ejecuta evento okeypress")
+    }
+
+</script>
+</head>
+
+<body>
+    <h1>Eventos HTML</h1>
+    <p>Escribe en el cuadro de texto</p>
+    <input type="text" onkeydown="mifuncion()">
+
+
+    <p>Dijous es jueves en valenciano</p>
+    <!-- programa un evento en la caja de texto de forma que al pusar una tecla muestre el mensaje me gustan los juves en lmi -->
+    <input type="text" onkeydown="jueves()" onkeypress="nose()">
+
+</body>
