@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>práctica Head y eventos </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Practica bloque 3</h1>
+
+
+    <script>
+
+
+        function apellido() {
+            var apellido = document.getElementById("apellido").value;
+
+            var name = document.getElementById("name").value;
+            alert('bienvenido ' +  name  + apellido )
+
+        }
+
+
+    </script>
+
+
+
+
+    Introduce tu nombre: <input type="text" id="name">
+    Introduce tu apellido: <input type="text" id="apellido" onchange="apellido()">
+
+</body>
+
+</html>

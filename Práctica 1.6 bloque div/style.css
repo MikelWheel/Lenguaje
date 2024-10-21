@@ -6,7 +6,7 @@ nav{
     background-color: lightgreen;
     text-align: center;
 }
-section.primera{
+main.primera{
     background-color: orange;
 
 }
@@ -15,7 +15,7 @@ div.articulos{
     display: inline-block;
   
 }
-section.segunda{
+article.segunda{
     background-color: orange;
 
 }

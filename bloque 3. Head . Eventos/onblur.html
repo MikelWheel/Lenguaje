@@ -1,0 +1,42 @@
+<!-- Ejemplo onload event -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- script javascript     -->
+    <script>
+        function funcion_nom() {
+            var nom = document.getElementById("name").value;
+            alert('bienvenido ' + nom)
+        }
+
+        function funcion_edad() {
+            var age = document.getElementById("age").value;
+            alert("con " + age + ' ya tendrás el carnet de conducir. ¿no?')
+        }
+
+
+        function parrafo_rojo(){
+            alert('soy una función')
+            var elparrafo=document.getElementById("mi_parrafo");
+            elparrafo.style.color='red'
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <h1>Eventos HTML</h1>
+    Introduce tu nombre: <input type="text" id="name" onblur="funcion_nom()">
+    Introduce tu edad: <input type="text" id="age" onchange="funcion_edad()">
+
+    <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+    <!-- al hacer click en el parrafo que el párrafo se pinte de rojo, se tiene que utilizar función parrafo rojo -->
+    <!-- al hacer click en el párrafo se pintara de rojo -->
+    <p onclick="parrafo_rojo()" id="mi_parrafo">Este párrafo</p>
+
+
+</body >
