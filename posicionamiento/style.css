@@ -1,0 +1,39 @@
+p.desplazado {
+    background-color: white;
+    border: black 1px solid;
+    position: absolute;
+    right:  50%;
+    top: 50%;
+  }
+  p.p1 {
+    background-color: lightblue;
+    height: 150px;
+    width: 150px;
+  }
+  
+  p.p2 {
+    background-color: #DDDDDD;
+    height: 150px;
+    left: 50px;
+    position: relative;
+    top: -50px;
+    width: 150px;
+  }
+  p.p1 {
+    background-color: lightblue;
+    height: 150px;
+    left: 50px;
+    position: relative;
+    top: 0;
+    width: 150px;
+    z-index: 2;
+  }
+  p.p2 {
+    background-color: #DDDDDD;
+    height: 150px;
+    left: 0;
+    position: relative;
+    top: -50px;
+    width: 150px;
+    z-index: 1;
+  }
