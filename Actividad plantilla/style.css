@@ -1,110 +1,74 @@
-* {
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    text-align: center; /* Centrar el texto de todo el cuerpo */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000; /* Fondo negro */
-    color: #FFA500; /* Texto naranja */
-    line-height: 1.6;
-}
-
-header {
-    background: #000; /* Fondo negro */
-    color: #FFA500; /* Texto naranja */
-    padding: 1em;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: #FFA500; /* Texto de enlaces en naranja */
-    text-decoration: none;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
+header.titulo {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; /* Centrar el texto del header */
 }
 
 main {
-    padding: 20px;
     text-align: center;
+    margin: 20px 0;
 }
 
-footer {
-    background: #000; /* Fondo negro */
-    color: #FFA500; /* Texto naranja */
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.escudo img {
+    max-width: 150px;
+    margin: 20px 0;
 }
 
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: left;
+.categoria {
+    margin: 20px 0;
 }
 
-form label {
-    display: block;
-    margin: 10px 0 5px;
+.categoria nav a p {
+    background-color: #eaeaea;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    transition: background-color 0.3s;
 }
 
-form input, form textarea, form button {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+.categoria nav a p:hover {
+    background-color: #ccc;
 }
 
-form button {
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-/* Estilos para las secciones de equipo */
-.team-section {
-    margin-bottom: 40px;
-}
-
-.team-section h3 {
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    color: #FFA500; /* Títulos en naranja */
-}
-
-/* Estilos para la cuadrícula de jugadores */
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+.jugadores {
+    display: flex;
+    justify-content: center;
     gap: 20px;
-    justify-items: center;
+    margin: 20px 0;
+}
+
+.jugador {
+    width: 80px;
+    height: 70px;
+}
+
+.centro {
     text-align: center;
-    padding: 20px;
 }
 
-.team-grid img {
-    width: 7px; /* Imagen más pequeña */
-    height: 7px;
-    border-radius: 8px;
+/* Estilos para páginas individuales */
+.jugadores-grande {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
 }
 
-.team-grid p {
-    margin-top: 8px;
-    font-weight: bold;
-    color: #FFA500; /* Nombres en naranja */
+.jugador-grande {
+    width: 120px;
+    height: 100px;
 }
