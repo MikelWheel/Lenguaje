@@ -32,9 +32,9 @@ div.cafei{
 }
 div.cafe{
 
-    position: relative;
-    right: -750px;
-    bottom: -200px;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
 }
 div.bloque4{
 
@@ -46,14 +46,15 @@ div.Tc{
 div.contacto{
 
     position: relative;
-    right: -1430px;
+    right: -1280px;
     bottom: -200px;
 }
 div.contactoi{
 
     
     position: relative;
-    right: -1500px;
+    float: right;
+    
 }
 div.ic{
     
