@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- Formulario 1 -->
+    <section class="formulario" id="formulario1">
+        <form>
+            <h1>Accede a tu Área Clientes</h1>
+            <label>
+                <input type="radio" name="documento" checked>
+                DNI o Tarjeta de residencia
+            </label>
+            <label>
+                <input type="radio" name="documento">
+                Pasaporte
+            </label>
+            <div>
+                <label for="numero-documento">Número de documento</label>
+                <input type="text" id="numero-documento" placeholder="DNI o Tarjeta de residencia">
+            </div>
+            <div>
+                <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                <div class="fecha">
+                    <input type="text" placeholder="DD">
+                    <input type="text" placeholder="MM">
+                    <input type="text" placeholder="AAAA">
+                </div>
+            </div>
+            <label>
+                <input type="checkbox"> Recordar
+            </label>
+            <button type="submit">Entrar</button>
+            <a href="#">Acceder con DNI electrónico</a>
+            <a href="#">Más información sobre seguridad</a>
+        </form>
+    </section>
+
+    <!-- Formulario 2 -->
+    <section class="formulario" id="formulario2">
+        <form>
+            <h1>Empieza creando tu usuario</h1>
+            <input type="text" placeholder="Nombre (como sale en el DNI)">
+            <input type="text" placeholder="1º apellido (como sale en el DNI)">
+            <input type="text" placeholder="2º apellido (como sale en el DNI)">
+            <select>
+                <option>TIPO DE DOCUMENTO</option>
+                <option>DNI/NIF</option>
+                <option>Certificado AEAT</option>
+            </select>
+            <input type="text" placeholder="Número de documento">
+            <input type="text" placeholder="Móvil">
+            <input type="email" placeholder="Email">
+            <button type="submit">Siguiente</button>
+        </form>
+    </section>
+
+    <!-- Formulario 3 -->
+    <section class="formulario" id="formulario3">
+        <form>
+            <h1>¿Eres nuevo?</h1>
+            <p>Regístrate para guardar tu información y hacer pedidos más fácil y rápido.</p>
+            <input type="email" placeholder="Introduce tu email">
+            <input type="tel" placeholder="Tu teléfono">
+            <input type="password" placeholder="Introduce tu contraseña">
+            <input type="password" placeholder="Confirmar contraseña">
+            <label><input type="checkbox"> He leído y acepto la Política de privacidad</label>
+            <label><input type="checkbox"> Acepto recibir comunicaciones comerciales</label>
+            <button type="submit">Crea tu cuenta</button>
+        </form>
+    </section>
+</body>
+</html>
