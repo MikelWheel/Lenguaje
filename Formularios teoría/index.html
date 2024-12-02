@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        var deslizante = document.getElementById("rango");
+        var salida = document.getElementById("nota");
+        salida.innerHTML = deslizante.value;
+        deslizante.oninput = function(){
+        salida.innerHTML = this.value;
+        }
+
+    </script>
 </head>
 <body>
     <h2>Formulario</h2>
@@ -77,6 +86,52 @@
                 <input type="time" name="hora" id="hora">
             </p>
 
+
+            <p>
+                salida hotel +2h<input type="checkbox" name="check" id="check" checked>
+            </p>
+            <p>
+                Vehículo para venir al instituto
+                <input type="checkbox" name="bici" value="bici">bici
+                <input type="checkbox" name="coche" value="coche">coche
+                <input type="checkbox" name="moto" value="moto">moto
+
+
+
+            </p>
+            <p>
+                Selecciona tu color favorito
+               
+                <input type="radio" name="color" id="amarillo" value="amarillo">amarillo
+                <input type="radio" name="color" id="verde" value="verde">verde
+                <input type="radio" name="color" id="rojo" value="rojo">rojo
+                <input type="radio" name="color" id="no color" value="no he elegido color">no he elegido color
+
+            </p>
+
+            <p>
+                <input type="color" name="mycolour" id="mycolour"> 
+            </p>
+
+            <p>
+                selecciona tu nota del módulo (0,10)<input type="range" name="rango" id="rango" min="0" max="10" step="1">
+            </p>
+            <p>
+                Nota: <span id="nota"></span>
+            </p>
+      
+
+
+            <p>
+                <input type="file" name="archivo" id="archivo">
+            </p>
+
+
+            <p>
+                <textarea name="observacion" id="observacion" cols="30" rows="10"></textarea>
+            </p>
+
+            
             <p>
                 <input type="submit" value="botón enviar">
                 <input type="reset" value="restablecer">
