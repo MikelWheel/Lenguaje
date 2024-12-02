@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cita Previa - Identificación de la persona solicitante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Generalitat Valenciana">
+        <h1>Conselleria de Sanitat Universal i Salut Pública</h1>
+    </header>
+    <main>
+        <h2>Cita Previa - Identificación de la persona solicitante</h2>
+        <section>
+            <h3>A. DATOS DE LA PERSONA SOLICITANTE</h3>
+            <p>Introduzca su número de tarjeta SIP y su fecha de nacimiento:</p>
+            <form>
+                <label for="numero-sip">Número SIP *</label>
+                <input type="text" id="numero-sip" name="numero-sip" required pattern="\d{10}" title="El número SIP debe tener 10 dígitos">
+                <div>
+                    <label for="dia">Día *</label>
+                    <input type="text" id="dia" name="dia" required>
+                    <label for="mes">Mes *</label>
+                    <input type="text" id="mes" name="mes" required>
+                    <label for="anio">Año *</label>
+                    <input type="text" id="anio" name="anio" required>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section>
+            <h3>Ejemplos de tarjetas SIP</h3>
+            <img src="img/t1.jpg" alt="Ejemplo tarjeta SIP 1">
+            <img src="img/t2.jpg" alt="Ejemplo tarjeta SIP 2">
+            <img src="img/t3.jpg" alt="Ejemplo tarjeta SIP 3">
+        </section>
+    </main>
+</body>
+</html>
